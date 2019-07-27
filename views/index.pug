@@ -1,11 +1,9 @@
 extends layout
-    
+
 block content
     h1 #{title}
     ul
         each article, i in articles
-            li
-                h3= article.title
-                cite= article.author
-                p= article.body
+            li= article.title 
+          
         
